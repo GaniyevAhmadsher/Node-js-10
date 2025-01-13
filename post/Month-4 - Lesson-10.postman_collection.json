@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "415a1de2-2dbc-49e2-aa7a-32dd4e39f859",
+		"name": "Month-4 | Lesson-10",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40691063"
+	},
+	"item": [
+		{
+			"name": "All News",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4040/api/news",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"api",
+						"news"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "News By Category",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4040/api/news/category/local",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"api",
+						"news",
+						"category",
+						"local"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "News By ID",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4040/api/news/1",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"api",
+						"news",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search News",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4040/api/news/search?q=toshkent",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"api",
+						"news",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "toshkent"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add News",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Farg'onada katta portlash\",\r\n    \"content\": \"Farg'onada metan zapirafka portladi...\",\r\n    \"category\": \"local\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4040/api/news",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"api",
+						"news"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
